@@ -1,20 +1,11 @@
-#!/bin/bash
 
-##########################################################################
-###
-###      Author: Rahul Kumar
-###      Email: rahul@tecadmin.net
-###      Website: https://tecadmin.net
-###      Version 3.1
-###
-##########################################################################
 
-CONFIGFILE=/etc/mydumpadmin/settings.conf
+CONFIGFILE=/etc/MysqlDumpBash/settings.conf
 
 source $CONFIGFILE
 TIME_FORMAT='%d%m%Y-%H%M'
 cTime=$(date +"${TIME_FORMAT}")
-LOGFILENAME=$LOG_PATH/mydumpadmin-${cTime}.txt
+LOGFILENAME=$LOG_PATH/MysqlDumpBash-${cTime}.txt
 CREDENTIALS="--defaults-file=$CREDENTIAL_FILE"
 
 
